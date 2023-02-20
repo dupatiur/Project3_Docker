@@ -18,16 +18,16 @@ def main():
     data = Lime_file.read()
     word_Lime_file=data.split()
     result.write(" \n")
-    result.write("Limerick.txt has a word count of:- "+str(len(word_Lime_file)))
+    result.write("Limerick.txt word count :- "+str(len(word_Lime_file)))
     word_IF=[]
     for i in word_IF_file:
         jo=i.translate(str.maketrans('', '', string.punctuation))
         jo=jo.capitalize()
         word_IF.append(jo)
     result.write(" \n")
-    result.write("IF.txt has a word count of:- "+str(len(word_IF)))
+    result.write("IF.txt word count :- "+str(len(word_IF)))
     result.write(" \n")
-    result.write("Total number of words in IF.txt and Limerick.txt are:- "+str(len(word_IF) + len(word_Lime_file)))
+    result.write("Total number of words in both IF.txt and Limerick.txt are:- "+str(len(word_IF) + len(word_Lime_file)))
     count_IF = []
     set1 = set(word_IF)
     for i in set1: 
